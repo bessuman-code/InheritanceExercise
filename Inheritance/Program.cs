@@ -29,11 +29,22 @@ namespace Inheritance
              * Creatively display the class member values 
              */
 
+            var newBird = new Bird() { Hair = "Feathers and 2 wings", Legs = 2, Tail = "No tail" };
+            Console.WriteLine($"{newBird.Hair} {newBird.Legs}");
+            newBird.BirdFood();
+            newBird.BirdHome();
+
+
+
             /*Create an object of your Reptile class
              *  give values to your members using the object of your Bird class
              *  
              * Creatively display the class member values 
              */
+            var newReptile = new Reptile() { Hair = "Scales", Legs = 4, Tail = "Long" };
+            Console.WriteLine($"{newReptile.Hair} {newReptile.Legs}");
+            newReptile.ReptileFood();
+            newReptile.ReptileHome();
         }
     }
 }
